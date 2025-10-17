@@ -28,3 +28,15 @@ lightning_logs/
 *.key
 *.json
 *.env.*
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+data/
+runs/
+!src/models/isolation_forest/figs/**
+!src/models/isolation_forest/artifacts/metrics/**
+!src/models/isolation_forest/artifacts/model.joblib
