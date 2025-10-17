@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Envs
+.venv/
+.env
+
+# Data / artifacts
+data/raw/*
+data/interim/*
+data/processed/*
+data/windows/*
+!data/**/.gitkeep
+
+runs/
+logs/
+lightning_logs/
+
+# Secrets
+*.key
+*.json
+*.env.*

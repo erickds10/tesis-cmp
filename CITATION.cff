@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Detección no supervisada de anomalías en trayectorias AIS (Galápagos)"
+authors:
+  - family-names: "Suárez"
+    given-names: "Erick D."
+date-released: "2025-10-17"
+version: "0.1.0"
+doi: ""
+url: "https://github.com/erickds10/tesis-ais-anomalias"

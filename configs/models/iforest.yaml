@@ -1,0 +1,4 @@
+seed: 42
+n_estimators: 400
+max_samples: 512
+contamination: 0.05
