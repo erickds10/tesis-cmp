@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data pesados
+data/**/*.dat
+data/**/*.bin
+data/**/*.npy
+data/**/*.npz
+data/**/*.feather
+data/**/*.orc
+data/**/*.csv.gz
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+data/**/*.zst
+
+# Parquets grandes (dejamos sólo los pequeños si es necesario)
+data/**/*.parquet
+
+# Artefactos modelo pesados
+data/ocsvm_runs/*_eval_scores_mm.dat
+data/ocsvm_runs/*_model_*.pkl
+data/ocsvm_runs/*_rff.pkl
+data/ocsvm_runs/*_pca.pkl
+data/ocsvm_runs/*_imputer*.pkl
+data/ocsvm_runs/*robust_scaler*.pkl
+
+# Temporal
+*.tmp
+*.temp
+.DS_Store

@@ -1,0 +1,65 @@
+{
+  "external_data_dir": "/teamspace/studios/this_studio/data",
+  "out_dir": "/teamspace/studios/this_studio/data/ocsvm_runs",
+  "artifact_prefix": "ocsvm_rbf",
+  "svm_nu_grid": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "svm_gamma_grid": [
+    "scale",
+    0.01
+  ],
+  "kernel": "rbf",
+  "kfold_splits": 5,
+  "max_train_samples": 800000,
+  "max_search_samples": 400000,
+  "eval_batch_size": 2000000,
+  "best_params": {
+    "nu": 0.08,
+    "gamma": 0.3,
+    "D": 4096,
+    "pca_components": 16
+  },
+  "metrics": {
+    "roc_auc": 0.5299973621617495,
+    "pr_auc": 0.04635143413268265,
+    "ap": 0.046352748992937995,
+    "raw": {
+      "roc_auc": 0.5299973621629959,
+      "pr_auc": 0.046351434132843226,
+      "ap": 0.046352749007810626
+    },
+    "smooth": {
+      "roc_auc": 0.5462919791973039,
+      "pr_auc": 0.04968886550338538,
+      "ap": 0.049689772591319195
+    }
+  },
+  "metrics_at_k": {
+    "0.01": {
+      "k": 277896,
+      "precision": 0.08651406816194489,
+      "recall": 0.02396531100478469,
+      "f1": 0.03753345765387008
+    },
+    "raw@0.01": {
+      "k": 277896,
+      "precision": 0.08651406816194489,
+      "recall": 0.02396531100478469,
+      "f1": 0.03753345765387008
+    },
+    "smooth@0.01": {
+      "k": 277896,
+      "precision": 0.10602489411544565,
+      "recall": 0.029370015948963317,
+      "f1": 0.045998078209534485
+    }
+  },
+  "label_file": "labels_anom.parquet",
+  "label_col": "window_id",
+  "label_mapping": "JOIN on window_id",
+  "model_type": "PCA16 + RFF8192 + SGDOneClassSVM",
+  "rff_components": 2048
+}
